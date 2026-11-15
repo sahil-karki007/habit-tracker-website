@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { APP_NAME, DOWNLOAD_URL } from '../config';
+import { APP_NAME, APK_READY } from '../config';
+import DownloadButton from './DownloadButton';
 import './Download.css';
 
 const STEPS = [
@@ -22,16 +23,20 @@ function Download() {
           Ready to build your <span>streak?</span>
         </h2>
         <p className="download-sub">
-          Get {APP_NAME} on your Android phone and start your first 100% day today.
+          {APK_READY
+            ? `Get ${APP_NAME} on your Android phone and start your first 100% day today.`
+            : `${APP_NAME} for Android is almost here. Check back soon to download it.`}
         </p>
 
         <DownloadButton className="big" />
 
-        <ol className="download-steps">
-          {STEPS.map((s) => (
-            <li key={s}>{s}</li>
-          ))}
-        </ol>
+        {APK_READY && (
+          <ol className="download-steps">
+            {STEPS.map((s) => (
+              <li key={s}>{s}</li>
+            ))}
+          </ol>
+        )}
       </motion.div>
     </section>
   );

@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { APP_NAME, TAGLINE, DOWNLOAD_URL } from '../config';
-import './Hero.css';
+import { APP_NAME, TAGLINE } from '../config';
 import DownloadButton from './DownloadButton';
+import './Hero.css';
+
 function Hero() {
   return (
     <section className="hero">

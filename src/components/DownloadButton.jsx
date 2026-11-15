@@ -8,6 +8,7 @@ function DownloadButton({ className = '' }) {
       </span>
     );
   }
+
   return (
     <a className={`btn-primary ${className}`} href={DOWNLOAD_URL} download>
       Download for Android
