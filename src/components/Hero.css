@@ -1,0 +1,155 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 12vw, 5.5rem);
+  line-height: 1.05;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-tagline {
+  font-size: 1.4rem;
+  margin-top: 8px;
+}
+
+.hero-sub {
+  color: var(--muted);
+  max-width: 460px;
+  margin: 16px auto 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 1px solid var(--muted);
+  color: var(--text);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+/* Phone mockup */
+.phone {
+  width: 240px;
+  height: 480px;
+  border-radius: 36px;
+  border: 8px solid #2a2a40;
+  background: var(--surface);
+  box-shadow: 0 30px 80px rgba(79, 142, 247, 0.25);
+  animation: float 5s ease-in-out infinite;
+}
+
+.phone-screen {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ring {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: conic-gradient(var(--accent-2) 82%, #2a2a40 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ring::before {
+  content: '';
+  position: absolute;
+  inset: 14px;
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.ring span {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.phone-label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@media (min-width: 900px) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+    gap: 96px;
+    text-align: left;
+  }
+
+  .hero-sub {
+    margin-left: 0;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+}
+.hero-logo {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
+}
+
+@media (min-width: 900px) {
+  .hero-logo {
+    margin-left: 0;
+  }
+}

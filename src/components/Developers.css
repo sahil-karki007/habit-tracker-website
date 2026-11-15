@@ -1,0 +1,55 @@
+.devs {
+  padding: 96px 24px;
+  text-align: center;
+}
+
+.devs h2 {
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  margin-bottom: 40px;
+}
+
+.devs h2 span {
+  color: var(--accent);
+}
+
+.devs-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dev-card {
+  width: 240px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid #2a2a40;
+  border-radius: 20px;
+}
+
+.dev-avatar {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+
+.dev-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.dev-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}

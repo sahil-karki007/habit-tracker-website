@@ -1,0 +1,57 @@
+.streaks {
+  padding: 96px 24px;
+  text-align: center;
+  background: radial-gradient(circle at 50% 30%, rgba(46, 204, 113, 0.12), transparent 60%);
+}
+
+.streak-flame {
+  font-size: 3.5rem;
+}
+
+.streak-number {
+  font-size: clamp(5rem, 22vw, 9rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--accent-2);
+}
+
+.streak-caption {
+  color: var(--muted);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.streak-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 56px;
+}
+
+.streak-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.streaks h2 {
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  max-width: 640px;
+  margin: 0 auto 16px;
+}
+
+.streaks h2 span {
+  color: var(--accent-2);
+}
+
+.streak-text {
+  color: var(--muted);
+  max-width: 520px;
+  margin: 0 auto;
+}

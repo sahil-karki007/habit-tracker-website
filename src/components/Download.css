@@ -1,0 +1,42 @@
+.download {
+  padding: 96px 24px;
+}
+
+.download-box {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 56px 28px;
+  border-radius: 28px;
+  border: 1px solid #2a2a40;
+  background: radial-gradient(circle at 50% 0%, rgba(79, 142, 247, 0.2), var(--surface) 70%);
+}
+
+.download h2 {
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  margin-bottom: 12px;
+}
+
+.download h2 span {
+  color: var(--accent-2);
+}
+
+.download-sub {
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+.btn-primary.big {
+  display: inline-block;
+  padding: 18px 40px;
+  font-size: 1.1rem;
+}
+
+.download-steps {
+  list-style-position: inside;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 32px;
+  display: grid;
+  gap: 8px;
+}
