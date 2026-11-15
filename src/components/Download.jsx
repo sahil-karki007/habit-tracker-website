@@ -25,9 +25,7 @@ function Download() {
           Get {APP_NAME} on your Android phone and start your first 100% day today.
         </p>
 
-        <a className="btn-primary big" href={DOWNLOAD_URL} download>
-          Download for Android
-        </a>
+        <DownloadButton className="big" />
 
         <ol className="download-steps">
           {STEPS.map((s) => (

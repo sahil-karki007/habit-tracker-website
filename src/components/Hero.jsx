@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { APP_NAME, TAGLINE, DOWNLOAD_URL } from '../config';
 import './Hero.css';
-
+import DownloadButton from './DownloadButton';
 function Hero() {
   return (
     <section className="hero">
@@ -20,9 +20,7 @@ function Hero() {
           Hit 100% every day and watch your streak grow.
         </p>
         <div className="hero-buttons">
-          <a className="btn-primary" href={DOWNLOAD_URL} download>
-            Download for Android
-          </a>
+          <DownloadButton />
           <a className="btn-secondary" href="#features">
             See features
           </a>
